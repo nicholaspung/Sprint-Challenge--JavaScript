@@ -6,6 +6,40 @@
   object name, diet, weight, length, period
 */
 
+class Dinosaur {
+  constructor(attributes) {
+    this.name = attributes.name;
+    this.diet = attributes.diet;
+    this.weight = attributes.weight;
+    this.length = attributes.length;
+    this.period = attributes.period;
+  }
+}
+
+const tyrannosaurus = new Dinosaur({
+  name: 'Tyrannosaurus',
+  diet: 'carnivorous',
+  weight: '7000kg',
+  length: '12m',
+  period: 'Late Cretaceous'
+})
+
+const stegosaurus = new Dinosaur({
+  name: 'Stegosaurus',
+  diet: 'herbivorous',
+  weight: '2000kg',
+  length: '9m',
+  period: 'Late Jurassic'
+})
+
+const velociraptor = new Dinosaur({
+  name: 'Velociraptor',
+  diet: 'carnivorous',
+  weight: '15kg',
+  length: '1.8m',
+  period: 'Late Cretaceous'
+})
+
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
 
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
