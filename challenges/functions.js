@@ -57,7 +57,9 @@ consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
-// Explanation: 
+// Explanation: Because Javascript has closures, functions are able to access variables outside its scope.
+//              In other words, a closure is when a function body has access to variables defined outside
+//              the function body. That's why `nestedfunction()` can access the variable `internal`.
 
 
 const external = "I'm outside the function";
