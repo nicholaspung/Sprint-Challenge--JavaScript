@@ -31,6 +31,7 @@ Edit this document to include your answers after each question. Make sure to lea
 1. Describe the biggest difference between `.forEach` & `.map`.
 
     The biggest difference is that .forEach mutates the current Array when used. .map can be assigned to a new Array, however it doesn't change the current Array.
+    Said another way - .forEach doesn't return us anything, while .map does.
 
 2. What is the difference between a function and a method?
 
@@ -38,21 +39,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 3. What is closure?
 
-    A closure is when a function is able to access a variable directly outside it's lexicon scope.
+    A closure is when a function is able to access a variable outside it's scope. Another way to say it: a closure is a function that 'remembers' the environment in which
+    it was created, and is able to access variables outside (above) it's scope.
 
 4. Describe the four rules of the 'this' keyword.
 
     Window/global binding: when used in the global Javascript console, 'this' points to the 'Window' object, which houses all of Javascript. It is not recommended to use this unless you're absolutely
-        certain you know what you're doing.
+    certain you know what you're doing.
+
     Implicit binding: when used, 'this' 'points' towards the object/function that is housing it. When declaring an object, 'this' points directly to the left of the dot notation.
+
     Explicit binding: when used, 'this' 'points' directly toward the object is being called, using .call(), .apply(), and .bind(). It's considered explicit because you are directly 'pointing' at an
-        object that you are passing through it.
-    New binding: when used, 'this' 'points' towards the new object being called.
+    object that you are passing through it.
+    
+    New binding: when used, 'this' 'points' towards the specific instance of the new object being created and returned by the constructor function.
 
 5. Why do we need super() in an extended class?
 
-    super() is needed in an extended class because it references all the properties of the class being extended. Without super(), the class being extends would not be able to have the same
-    properties as the previous class, and also it would defeat the purpose of extending a class.
+    super() is needed in an extended class because it references all the properties of the class being extended and tells it to put those attributes into the new extended class. Without super(), the 
+    class being extended would not be able to have the same properties as the previous class, which would defeat the purpose of extending a class. 
+    
+    Said another way: super() is used to tell a parent's constructor to be concerned with the child's attributes vis versa and abstracts away the Object.create(this, Class) syntax.
 
 ## Project Set up
 
@@ -82,19 +89,19 @@ Your finished project must include all of the following requirements:
 
 ## Task 1: Objects and Arrays
 Test your knowledge of objects and arrays. 
-* [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
+* [x] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
 
 ## Task 2: Functions
 This challenge takes a look at callbacks and closures as well as scope. 
-* [ ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
+* [x] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
 
 ## Task 3: Prototypes
 Create constructors, bind methods, and create cuboids in this prototypes challenge.
-* [ ] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
+* [x] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
 
 ## Task 4: Classes
 Once you have completed the prototypes challenge, it's time to convert all your hard work into classes.
-* [ ] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
+* [x] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
 
 In your solutions, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
